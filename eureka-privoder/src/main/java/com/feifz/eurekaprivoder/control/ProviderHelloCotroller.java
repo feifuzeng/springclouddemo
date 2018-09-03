@@ -17,8 +17,8 @@ public class ProviderHelloCotroller {
     @Value("${server.port}")
     String port;
 
-    @RequestMapping("/hi")
-    public String home(@RequestParam(value = "name", defaultValue = "forezp") String name) {
-        return "hi " + name + " ,我是来自 port:" + port;
+    @RequestMapping("/hello")
+    public String home(@RequestParam(value = "name", defaultValue = "Micheal Jordan") String name) {
+        return "hello " + name + " ,i'm from port:" + port;
     }
 }

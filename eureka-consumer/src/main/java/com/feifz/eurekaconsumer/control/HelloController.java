@@ -18,8 +18,8 @@ public class HelloController {
     @Autowired
     HelloService helloService;
 
-    @RequestMapping(value = "/hi")
-    public String hi(@RequestParam String name){
-        return "嘻嘻，"+helloService.hiService(name);
+    @RequestMapping(value = "/hello")
+    public String hi(@RequestParam (value = "name", defaultValue = "Micheal Jordan")String name){
+        return helloService.hiService(name);
     }
 }

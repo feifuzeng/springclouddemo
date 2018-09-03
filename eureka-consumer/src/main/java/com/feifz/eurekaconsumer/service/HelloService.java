@@ -17,7 +17,7 @@ public class HelloService {
     RestTemplate restTemplate;
 
     public String hiService(String name) {
-        return restTemplate.getForObject("http://EUREKA-PROVIDER/hi?name="+name,String.class);
+        return restTemplate.getForObject("http://EUREKA-PROVIDER/hello?name="+name,String.class);
     }
 
 }
