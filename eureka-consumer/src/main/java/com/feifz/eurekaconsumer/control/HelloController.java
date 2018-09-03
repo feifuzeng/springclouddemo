@@ -20,6 +20,6 @@ public class HelloController {
 
     @RequestMapping(value = "/hi")
     public String hi(@RequestParam String name){
-        return helloService.hiService(name);
+        return "嘻嘻，"+helloService.hiService(name);
     }
 }
