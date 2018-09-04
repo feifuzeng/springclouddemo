@@ -7,3 +7,6 @@ server:
 spring:
   application:
     name: eureka-consumer-feign
+feign:
+  hystrix:
+    enabled: true
