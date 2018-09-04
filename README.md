@@ -1,9 +1,9 @@
 # springclouddemo
 a very demo for studying springcloud
 
-* springboot
+* springboot version:2.0.4.RELEASE
 * eureka
-* springcloud
+* springcloud version:Finchley.RELEASE
 
 ## port setting
 * eureke-server:8081
